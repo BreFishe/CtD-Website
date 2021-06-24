@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>About</title>
+    <link rel="stylesheet" href="StyleSheet.css" />
+</head>
+<body>
+    <h1> About Page </h1>
+    <div class="main">
+        <nav>
+            <div class="logo">
+                <img src="images/SocialDistanced.png" width="200" height="160" />
+            </div>
+            <div class="nav-links">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+        <div class="frame">
+            <iframe loading="lazy" src="https://player.twitch.tv/?channel=closethedistancefgc&parent=localhost" frameborder="0" allowfullscreen="true" scrolling="no" height="480" width="848"></iframe>
+        </div>
+        <div class = "text">
+            Close the Distance is a group of midwest tournament organizers running events since June of 2020, It is run by Yango__, Overhaul, and Keato.
+            Close the distance runs both a strive and street fighter five event
+        </div>
+    </div>
+    <script>
+        var iframe = document.createElement('iframe');
+        document.getElementById("myDIV").appendChild(iframe);
+        iframe.setAttribute("style","height:100%;width:100%;");
+        iframe.contentWindow.document.open();
+        iframe.contentWindow.document.write(htmlcode);
+        iframe.contentWindow.document.close();
+    </script>
+</body>
+</html>
